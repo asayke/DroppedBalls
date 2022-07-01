@@ -1,11 +1,25 @@
-using System;
+using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class BallClickManager : MonoBehaviour
 {
-   private void OnMouseDown()
-   {
-      Destroy(gameObject, .1f);
-   }
+    private TextMeshProUGUI sessionCoinsText;
+    private PlayerStats playerStats;
+    private Ball ball;
+
+    private void Start()
+    {
+        sessionCoinsText = GameObject.Find("SessionCoims").gameObject.GetComponent<TextMeshProUGUI>();
+        playerStats = FindObjectOfType<PlayerStats>();
+        ball = gameObject.GetComponent<Ball>();
+    }
+
+    private void OnMouseDown()
+    {
+        int thisBallCoins = ball.Coins();
+        playerStats.IncAllCoins(thisBallCoins);
+        playerStats.sessionCoins += thisBallCoins;
+        sessionCoinsText.SetText(playerStats.sessionCoins.ToString());
+        Destroy(gameObject, .1f);
+    }
 }
