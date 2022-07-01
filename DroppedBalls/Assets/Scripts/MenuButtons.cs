@@ -3,13 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour
 {
-   public void Play()
-   {
-      SceneManager.LoadScene("GameScene");
-   }
+    public void Play()
+    {
+        SceneManager.LoadScene("GameScene");
+    }
 
-   public void Exit()
-   {
-      Application.Quit();
-   }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
