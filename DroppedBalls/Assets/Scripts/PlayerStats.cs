@@ -1,11 +1,11 @@
-using System;
 using TMPro;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI allCoinsText;
-
+    private int heathPoint = 3;
+    
     private static int allCoins;
     public int sessionCoins;
     
