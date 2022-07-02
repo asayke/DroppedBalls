@@ -12,7 +12,6 @@ public class Ball : MonoBehaviour
         return coins;
     }
 
-
     private void Start()
     {
         Random random = new Random();

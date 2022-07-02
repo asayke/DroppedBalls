@@ -6,10 +6,14 @@ public class BallDestroyer : MonoBehaviour
     private Renderer destroyerRenderer;
     [SerializeField] private HealhPoints healhPoints;
     [SerializeField] private GameObject endGameMenu;
+    private PlayerStats playerStats;
 
+    
     private void Start()
     {
         endGameMenu.SetActive(false);
+        playerStats = FindObjectOfType<PlayerStats>();
+        playerStats.sessionCoins = 0;
         destroyerRenderer = gameObject.GetComponent<Renderer>();
     }
 
