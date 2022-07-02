@@ -54,13 +54,14 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\BallMover.cs" />
+     <Compile Include="Assets\Scripts\HealhPoints.cs" />
      <Compile Include="Assets\Scripts\BallClickManager.cs" />
      <Compile Include="Assets\Scripts\MenuButtons.cs" />
      <Compile Include="Assets\Scripts\BallsCreator.cs" />
      <Compile Include="Assets\Scripts\BallColorContoller.cs" />
      <Compile Include="Assets\Scripts\Ball.cs" />
      <Compile Include="Assets\Scripts\BallDestroyer.cs" />
-     <Compile Include="Assets\Scripts\HealhPoints.cs" />
+     <Compile Include="Assets\Scripts\GameStripts.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
